@@ -7,6 +7,5 @@ module.exports = {
     '.+\\.ts$': 'ts-jest'
   },
   coverageProvider: 'v8',
-  reporters: ['default', 'jest-junit']
-
+  coverageReporters: ['json', 'html']
 }

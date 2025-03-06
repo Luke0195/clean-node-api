@@ -29,13 +29,14 @@ jobs:
       run: npm install
     - name: Run tests
       run: npm run test:ci
-    - name: Test Report
+    - name: Coverage
       uses: dorny/test-reporter@v1
-      if: success() || failure()    # run this step even if previous step failed
+      if: success() || failure() # run this step even if previous step failed
       with:
-          name: JEST Tests            # Name of the check run which will be created
-          path: junit.xml  # Path to test results
-          reporter: jest-junit
+        name: JEST Tests # Name of the check run which will be created
+        path: junit.xml
+        reporter: jest-junit
+
 
 
 

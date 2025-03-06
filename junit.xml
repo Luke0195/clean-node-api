@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="11" failures="0" errors="0" time="3.134">
-  <testsuite name="SignUp Controller" errors="0" failures="0" skipped="0" timestamp="2025-03-06T20:51:19" time="3.084" tests="11">
-    <testcase classname="SignUp Controller Should returns 400 if no name is provided" name="SignUp Controller Should returns 400 if no name is provided" time="0.002">
+<testsuites name="jest tests" tests="11" failures="0" errors="0" time="3.279">
+  <testsuite name="SignUp Controller" errors="0" failures="0" skipped="0" timestamp="2025-03-06T21:00:45" time="3.233" tests="11">
+    <testcase classname="SignUp Controller Should returns 400 if no name is provided" name="SignUp Controller Should returns 400 if no name is provided" time="0.003">
     </testcase>
-    <testcase classname="SignUp Controller Should returns 400 if no email is provided" name="SignUp Controller Should returns 400 if no email is provided" time="0">
+    <testcase classname="SignUp Controller Should returns 400 if no email is provided" name="SignUp Controller Should returns 400 if no email is provided" time="0.001">
     </testcase>
     <testcase classname="SignUp Controller Should returns 400 if no password is provided" name="SignUp Controller Should returns 400 if no password is provided" time="0">
     </testcase>
-    <testcase classname="SignUp Controller Should returns 400 if no passwordConfirmation is provided" name="SignUp Controller Should returns 400 if no passwordConfirmation is provided" time="0.001">
+    <testcase classname="SignUp Controller Should returns 400 if no passwordConfirmation is provided" name="SignUp Controller Should returns 400 if no passwordConfirmation is provided" time="0">
     </testcase>
     <testcase classname="SignUp Controller Should returns 400 if an invalid e-mail is provided" name="SignUp Controller Should returns 400 if an invalid e-mail is provided" time="0.001">
     </testcase>
-    <testcase classname="SignUp Controller Should returns 400 if passwordConfirmation fails" name="SignUp Controller Should returns 400 if passwordConfirmation fails" time="0">
+    <testcase classname="SignUp Controller Should returns 400 if passwordConfirmation fails" name="SignUp Controller Should returns 400 if passwordConfirmation fails" time="0.001">
     </testcase>
-    <testcase classname="SignUp Controller Should call EmailValidator with correct e-mail" name="SignUp Controller Should call EmailValidator with correct e-mail" time="0.001">
+    <testcase classname="SignUp Controller Should call EmailValidator with correct e-mail" name="SignUp Controller Should call EmailValidator with correct e-mail" time="0">
     </testcase>
     <testcase classname="SignUp Controller Should returns 500 if EmailValidator throws " name="SignUp Controller Should returns 500 if EmailValidator throws " time="0">
     </testcase>
     <testcase classname="SignUp Controller Should calls AddAccount with correct values" name="SignUp Controller Should calls AddAccount with correct values" time="0">
     </testcase>
-    <testcase classname="SignUp Controller Should returns 500 if AddAccount throws" name="SignUp Controller Should returns 500 if AddAccount throws" time="0">
+    <testcase classname="SignUp Controller Should returns 500 if AddAccount throws" name="SignUp Controller Should returns 500 if AddAccount throws" time="0.001">
     </testcase>
-    <testcase classname="SignUp Controller Should returns 201 when valid data is provided" name="SignUp Controller Should returns 201 when valid data is provided" time="0.001">
+    <testcase classname="SignUp Controller Should returns 201 when valid data is provided" name="SignUp Controller Should returns 201 when valid data is provided" time="0">
     </testcase>
   </testsuite>
 </testsuites>
