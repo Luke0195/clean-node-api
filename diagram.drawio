@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="K9vjDAnifF-m8f7E-VOk" name="Page-1">
-        <mxGraphModel dx="1909" dy="1864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1909" dy="1895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -55,7 +55,7 @@
                 <mxCell id="17" value="EmailValidatorAdapter" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;dashed=1;sketch=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
                     <mxGeometry x="-60" y="130" width="140" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="EmailValidator" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;dashed=1;sketch=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                <mxCell id="20" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;EmailValidator&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;dashed=1;sketch=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
                     <mxGeometry x="200" y="130" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="23" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#fad7ac;strokeColor=#b46504;" parent="1" vertex="1">
