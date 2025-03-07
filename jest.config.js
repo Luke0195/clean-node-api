@@ -9,4 +9,5 @@ module.exports = {
   preset: '@shelf/jest-mongodb',
   coverageProvider: 'v8',
   coverageReporters: ['json', 'html']
+
 }
