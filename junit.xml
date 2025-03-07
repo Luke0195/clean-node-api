@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="11" failures="0" errors="0" time="3.279">
-  <testsuite name="SignUp Controller" errors="0" failures="0" skipped="0" timestamp="2025-03-06T21:00:45" time="3.233" tests="11">
-    <testcase classname="SignUp Controller Should returns 400 if no name is provided" name="SignUp Controller Should returns 400 if no name is provided" time="0.003">
+<testsuites name="jest tests" tests="22" failures="0" errors="0" time="7.372">
+  <testsuite name="BcryptAdapter" errors="0" failures="0" skipped="0" timestamp="2025-03-07T12:42:30" time="6.675" tests="3">
+    <testcase classname="BcryptAdapter Should returns Bcrypt with correct values " name="BcryptAdapter Should returns Bcrypt with correct values " time="0.003">
     </testcase>
-    <testcase classname="SignUp Controller Should returns 400 if no email is provided" name="SignUp Controller Should returns 400 if no email is provided" time="0.001">
+    <testcase classname="BcryptAdapter Should returns a hash on success" name="BcryptAdapter Should returns a hash on success" time="0.001">
     </testcase>
-    <testcase classname="SignUp Controller Should returns 400 if no password is provided" name="SignUp Controller Should returns 400 if no password is provided" time="0">
+    <testcase classname="BcryptAdapter Should throws if bcrypt throws" name="BcryptAdapter Should throws if bcrypt throws" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="SignUp Controller" errors="0" failures="0" skipped="0" timestamp="2025-03-07T12:42:37" time="0.217" tests="11">
+    <testcase classname="SignUp Controller Should returns 400 if no name is provided" name="SignUp Controller Should returns 400 if no name is provided" time="0.001">
+    </testcase>
+    <testcase classname="SignUp Controller Should returns 400 if no email is provided" name="SignUp Controller Should returns 400 if no email is provided" time="0">
+    </testcase>
+    <testcase classname="SignUp Controller Should returns 400 if no password is provided" name="SignUp Controller Should returns 400 if no password is provided" time="0.001">
     </testcase>
     <testcase classname="SignUp Controller Should returns 400 if no passwordConfirmation is provided" name="SignUp Controller Should returns 400 if no passwordConfirmation is provided" time="0">
     </testcase>
-    <testcase classname="SignUp Controller Should returns 400 if an invalid e-mail is provided" name="SignUp Controller Should returns 400 if an invalid e-mail is provided" time="0.001">
+    <testcase classname="SignUp Controller Should returns 400 if an invalid e-mail is provided" name="SignUp Controller Should returns 400 if an invalid e-mail is provided" time="0">
     </testcase>
     <testcase classname="SignUp Controller Should returns 400 if passwordConfirmation fails" name="SignUp Controller Should returns 400 if passwordConfirmation fails" time="0.001">
     </testcase>
@@ -22,6 +30,26 @@
     <testcase classname="SignUp Controller Should returns 500 if AddAccount throws" name="SignUp Controller Should returns 500 if AddAccount throws" time="0.001">
     </testcase>
     <testcase classname="SignUp Controller Should returns 201 when valid data is provided" name="SignUp Controller Should returns 201 when valid data is provided" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="DbAddAccount Use Case" errors="0" failures="0" skipped="0" timestamp="2025-03-07T12:42:37" time="0.208" tests="5">
+    <testcase classname="DbAddAccount Use Case Should call Encrypter with correct password" name="DbAddAccount Use Case Should call Encrypter with correct password" time="0.001">
+    </testcase>
+    <testcase classname="DbAddAccount Use Case Should throws if Encrypter throws" name="DbAddAccount Use Case Should throws if Encrypter throws" time="0.005">
+    </testcase>
+    <testcase classname="DbAddAccount Use Case Should calls AddAccountRepository with correct values" name="DbAddAccount Use Case Should calls AddAccountRepository with correct values" time="0.001">
+    </testcase>
+    <testcase classname="DbAddAccount Use Case Should throws if AddAccountRepository throws" name="DbAddAccount Use Case Should throws if AddAccountRepository throws" time="0.001">
+    </testcase>
+    <testcase classname="DbAddAccount Use Case Should return an account on success" name="DbAddAccount Use Case Should return an account on success" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="EmailValidator Adapter" errors="0" failures="0" skipped="0" timestamp="2025-03-07T12:42:37" time="0.199" tests="3">
+    <testcase classname="EmailValidator Adapter Should returns false if validator returns false" name="EmailValidator Adapter Should returns false if validator returns false" time="0">
+    </testcase>
+    <testcase classname="EmailValidator Adapter Should returns true if validator returns true" name="EmailValidator Adapter Should returns true if validator returns true" time="0">
+    </testcase>
+    <testcase classname="EmailValidator Adapter Should call validator with correct e-mail" name="EmailValidator Adapter Should call validator with correct e-mail" time="0.001">
     </testcase>
   </testsuite>
 </testsuites>
