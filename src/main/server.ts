@@ -1,5 +1,12 @@
-import app from './config/app'
+import { MongoHelper } from '../infra/db/mongodb/helpers/mongo-helpers'
+import env from './config/env'
 
-app.listen(5050, () => {
-  console.log('server runing at: http://localhost:5050')
+MongoHelper.connect(env.mongoUrl).then(async (response) => {
+  const app = (await import('./config/app')).default
+  app.listen(env.port, () => {
+    console.log(`server runing at: http://localhost:${env.port}`)
+  })
+}).catch((error) => {
+  console.log('Não foi possível realizar a conexão com o banco')
+  console.log(error)
 })
