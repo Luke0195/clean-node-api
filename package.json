@@ -11,7 +11,7 @@
     "test:staged": "npm test --findRelatedTests",
     "test:coverage": " jest --ci --json --coverage --testLocationInResults --outputFile=coverage/report.json",
     "test:ci": "npm test -- --coverage   --reporters=default --reporters=jest-junit",
-    "start": " sucrase-node src/main/server.ts"
+    "start": " sucrase-node src/main/server.ts watch"
   },
   "keywords": [],
   "author": "",
@@ -46,6 +46,7 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "express": "^4.21.2",
+    "fast-glob": "^3.3.3",
     "mongodb": "^4.1.1",
     "validator": "^13.12.0"
   }
