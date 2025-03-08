@@ -4,10 +4,10 @@ import { MongoHelper } from '../../infra/db/mongodb/helpers/mongo-helpers'
 
 describe('SignUp Route', () => {
   beforeAll(async () => {
-    await MongoHelper.connect(process.env.MONGO_URI)
+    await MongoHelper.connect(process.env.MONGO_URL)
   })
 
-  beforeAll(async () => {
+  afterAll(async () => {
     await MongoHelper.disconnect()
   })
 
