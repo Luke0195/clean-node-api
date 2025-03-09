@@ -1,6 +1,5 @@
 import request from 'supertest'
 import app from '../config/app'
-import { type Request, type Response } from 'express'
 
 describe('Cors Middlewares', () => {
   test('Should return default content type as json', async () => {
