@@ -1,9 +1,7 @@
 import { type OptionalId } from 'mongodb'
-interface MongoAccountModel extends OptionalId<Document> {
-  name: string
-  email: string
-  password: string
+interface MongoModel<T> extends OptionalId<Document> {
+  data: T
 }
-export const mapToMongo = (data: any): MongoAccountModel => ({
+export const mapToMongo = <T>(data: any): MongoModel<T> => ({
   ...data
 })
