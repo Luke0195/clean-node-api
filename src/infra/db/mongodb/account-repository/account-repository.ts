@@ -6,7 +6,7 @@ import { mapToMongo } from '../helpers/parser'
 
 export class AccountMongoRepository implements AddAccountRepository {
   async add (addAccountModel: AddAccountModel): Promise<AccountModel> {
-    const accountCollection = MongoHelper.getCollection('accounts')
+    const accountCollection = await MongoHelper.getCollection('accounts')
     const parseAccountToMongoAccount = mapToMongo(addAccountModel)
     const result = await accountCollection.insertOne(parseAccountToMongoAccount)
     const account: AccountModel = Object.assign({}, addAccountModel, { id: result.insertedId.toString() })
