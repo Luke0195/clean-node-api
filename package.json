@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand --detectOpenHandles",
-    "test:verbose": "jest --passWithNoTests --runInBand",
+    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand --detectOpenHandles  --forceExit",
+    "test:verbose": "jest --passWithNoTests --runInBand  --forceExit",
     "prepare": "husky",
-    "test:unit": "npm test -- --watch -c jest-unit-config.js",
-    "test:integration": "npm test -- --watch -c jest-integration-config.js",
+    "test:unit": "npm test -- --watch -c jest-unit-config.js  --forceExit",
+    "test:integration": "npm test -- --watch -c jest-integration-config.js  --forceExit",
     "test:staged": "npm test --findRelatedTests",
-    "test:coverage": " jest --ci --json --coverage --testLocationInResults --outputFile=coverage/report.json",
+    "test:coverage": " jest --ci --json --coverage --testLocationInResults --outputFile=coverage/report.json  --forceExit",
     "test:ci": "npm test -- --coverage   --reporters=default --reporters=jest-junit",
     "start": " sucrase-node src/main/server.ts watch"
   },
