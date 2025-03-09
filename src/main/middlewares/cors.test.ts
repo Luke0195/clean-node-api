@@ -4,7 +4,7 @@ import { type Request, type Response } from 'express'
 
 describe('Cors Middlewares', () => {
   test('Should enable Cors', async () => {
-    app.post('/test_body_parser', (req, res) => {
+    app.post('/api/test_body_parser', (req, res) => {
       res.send(req.body)
     })
 
