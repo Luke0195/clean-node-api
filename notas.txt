@@ -1,0 +1,5 @@
+Notas sobre o curso.
+
+O - Open Close Principle(Principio do aberto e fechado). Podemos adicionar comportamentos na aplicação
+sem modificar o que já existe.
+L - Liskov Substituion Principle - Podemos usar qualquer classe que implemente uma interface no lugar outra.
